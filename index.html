@@ -4,118 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>您的姓名 - 个人简历</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 0 20px;
-        }
-        header {
-            background: #50b3a2;
-            color: white;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
-        }
-        header h1 {
-            margin: 0;
-            text-align: center;
-            padding-bottom: 10px;
-        }
-        .section {
-            margin: 20px 0;
-            padding: 20px;
-            background: white;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #50b3a2;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .contact {
-            text-align: center;
-            padding: 20px 0;
-            background: #333;
-            color: white;
-        }
-        @media(max-width: 768px) {
-            .container {
-                width: 95%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>您的姓名</h1>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#experience">经验</a></li>
+                <li><a href="#education">教育</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系我</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
-        <section class="section">
-            <h2>关于我</h2>
-            <p>在这里简短介绍一下你自己，包括你的职业目标和一些个人特点。</p>
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h1>您的姓名</h1>
+                <p>职位 | 地点</p>
+            </div>
         </section>
 
-        <section class="section">
-            <h2>技能</h2>
-            <ul>
-                <li>技能1</li>
-                <li>技能2</li>
-                <li>技能3</li>
-                <li>技能4</li>
-            </ul>
+        <section id="about">
+            <div class="container">
+                <h2>关于我</h2>
+                <p>在这里详细介绍一下你自己，包括你的职业目标、专业特长和个人特点。突出你的优势和独特之处。</p>
+            </div>
         </section>
 
-        <section class="section">
-            <h2>工作经验</h2>
-            <ul>
-                <li>
-                    <h3>职位名称 - 公司名称</h3>
-                    <p>工作时间段</p>
-                    <p>简要描述你的职责和成就。</p>
-                </li>
-                <!-- 可以添加更多工作经验 -->
-            </ul>
+        <section id="skills">
+            <div class="container">
+                <h2>技能</h2>
+                <div class="skill-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <h3>编程语言</h3>
+                        <p>Java, Python, JavaScript</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <h3>数据库</h3>
+                        <p>MySQL, MongoDB, PostgreSQL</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-server"></i>
+                        <h3>后端框架</h3>
+                        <p>Spring Boot, Django, Node.js</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>前端技术</h3>
+                        <p>React, Vue.js, HTML5, CSS3</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="section">
-            <h2>教育背景</h2>
-            <ul>
-                <li>
-                    <h3>学位 - 学校名称</h3>
-                    <p>就读时间段</p>
-                    <p>可以添加相关的学习成就或者重要课程。</p>
-                </li>
-            </ul>
+        <section id="experience">
+            <div class="container">
+                <h2>工作经验</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>高级软件工程师 - ABC科技有限公司</h3>
+                        <p class="date">2020年1月 - 至今</p>
+                        <ul>
+                            <li>领导开发团队完成多个大型项目，提高了30%的开发效率</li>
+                            <li>设计并实现了新的微服务架构，显著提升了系统的可扩展性</li>
+                            <li>优化了核心算法，使系统性能提升了50%</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>软件工程师 - XYZ信息技术公司</h3>
+                        <p class="date">2017年6月 - 2019年12月</p>
+                        <ul>
+                            <li>参与开发了公司的核心产品，为超过100万用户提供服务</li>
+                            <li>实现了自动化测试流程，减少了40%的bug报告</li>
+                            <li>获得了"年度最佳新人"奖</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
-    </div>
 
-    <footer class="contact">
+        <section id="education">
+            <div class="container">
+                <h2>教育背景</h2>
+                <div class="education-item">
+                    <h3>计算机科学硕士 - 某知名大学</h3>
+                    <p class="date">2015年9月 - 2017年6月</p>
+                    <p>主修人工智能和机器学习，GPA 3.8/4.0</p>
+                </div>
+                <div class="education-item">
+                    <h3>计算机科学学士 - 某大学</h3>
+                    <p class="date">2011年9月 - 2015年6月</p>
+                    <p>主修软件工程，GPA 3.7/4.0</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>项目展示</h2>
+                <div class="project-grid">
+                    <div class="project-item">
+                        <h3>智能家居控制系统</h3>
+                        <p>使用React和Node.js开发的智能家居控制平台，支持语音控制和远程操作。</p>
+                        <a href="#" class="btn">查看项目</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>电商数据分析平台</h3>
+                        <p>基于Python和Django的大数据分析平台，帮助电商企业优化销售策略。</p>
+                        <a href="#" class="btn">查看项目</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
         <div class="container">
-            <h2>联系方式</h2>
-            <p>邮箱：your.email@example.com</p>
-            <p>电话：+86 123 4567 8900</p>
-            <p>LinkedIn：linkedin.com/in/yourprofile</p>
-            <p>GitHub：github.com/yourusername</p>
+            <h2>联系我</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> your.email@example.com</p>
+                <p><i class="fas fa-phone"></i> +86 123 4567 8900</p>
+                <p><i class="fab fa-linkedin"></i> linkedin.com/in/yourprofile</p>
+                <p><i class="fab fa-github"></i> github.com/yourusername</p>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
